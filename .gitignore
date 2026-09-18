@@ -1,0 +1,45 @@
+# Challenge archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Forensic evidence
+*.raw
+*.mem
+*.img
+*.E01
+*.vmdk
+*.vdi
+
+# Network captures
+*.pcap
+*.pcapng
+
+# Executables / malware
+*.exe
+*.dll
+*.bin
+*.msi
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
