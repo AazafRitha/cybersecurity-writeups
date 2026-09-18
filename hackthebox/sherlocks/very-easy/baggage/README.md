@@ -1,54 +1,120 @@
-# 🧳 Baggage
+<p align="center">
+  <img src="images/baggage-icon.png" alt="Hack The Box Baggage Sherlock" width="280">
+</p>
 
-![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-Sherlock-9FEF00?style=flat-square&logo=hackthebox&logoColor=black)
+<h1 align="center">Baggage</h1>
+
+<p align="center">
+  <strong>Hack The Box Sherlock</strong><br>
+  Windows Shellbag Forensics Investigation
+</p>
+
+<p align="center">
+
+![Platform](https://img.shields.io/badge/Platform-Hack%20The%20Box-9FEF00?style=flat-square&logo=hackthebox&logoColor=black)
+![Type](https://img.shields.io/badge/Type-Sherlock-purple?style=flat-square)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Very%20Easy-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-DFIR-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+
+</p>
+
+---
 
 ## Overview
 
 **Baggage** is a Hack The Box Sherlock focused on **Windows Shellbag forensics**.
 
-The investigation involved analyzing Windows Registry artifacts to reconstruct a compromised user's filesystem activity and understand how an attacker searched for, accessed, staged, and prepared sensitive information for exfiltration.
+The investigation required analyzing Windows Registry artifacts to reconstruct the activity of a compromised user account.
 
-## Skills Practiced
+The main objective was to understand how an attacker navigated the victim's filesystem, searched for sensitive information, accessed network resources, staged collected data, and prepared information for possible exfiltration.
 
-- Windows Registry forensics
-- Shellbag analysis
-- `NTUSER.DAT` analysis
-- `UsrClass.dat` analysis
-- Windows Explorer activity reconstruction
-- Archive navigation analysis
-- UNC / network share investigation
-- Data staging identification
-- Timeline reconstruction
-
-## Tools Used
-
-- ShellBags Explorer
-- Registry Explorer
-- Eric Zimmerman forensic tools
-
-## Key Learning
-
-One of the most useful lessons from this Sherlock was understanding that different Windows artifacts may contain multiple timestamps for the same object.
-
-For example:
-
-- File Created time
-- File Modified time
-- File Accessed time
-- Registry LastWrite time
-- Shellbag interaction time
-
-These timestamps can represent different events, so they must be interpreted in the correct forensic context.
-
-## Status
-
-✅ **Sherlock Completed**
-
-The full investigation write-up, findings, screenshots, and methodology will be added after the Sherlock is retired, in accordance with Hack The Box's write-up policy.
+This Sherlock gave me practical experience working with real Windows forensic artifacts instead of relying only on logs.
 
 ---
 
-> **Note:** This page intentionally does not contain active challenge answers or spoilers.
+## Challenge Information
+
+| Field | Details |
+|---|---|
+| Platform | Hack The Box |
+| Challenge Type | Sherlock |
+| Name | Baggage |
+| Difficulty | Very Easy |
+| Category | Digital Forensics / DFIR |
+| Operating System | Windows |
+| Main Artifact | Shellbags |
+| Status | ✅ Completed |
+
+---
+
+## Investigation Focus
+
+The investigation mainly focused on identifying evidence related to:
+
+- Windows Explorer navigation
+- Downloaded archive activity
+- Attacker tooling
+- Sensitive folder access
+- Password-related directories
+- VPN-related information
+- Network-share access
+- Archive navigation
+- Data collection
+- Data staging
+- Compression of collected data
+- Exfiltration preparation
+- Timeline reconstruction
+
+---
+
+## What Are Shellbags?
+
+Shellbags are Windows Registry artifacts that can provide information about folders and locations that a user interacted with through Windows Explorer.
+
+They can help investigators identify activity involving:
+
+- Local directories
+- Network shares
+- Removable devices
+- ZIP archives
+- Deleted folders
+- Previously accessed locations
+
+One of the most useful things about Shellbags is that evidence of folder navigation may remain even after a folder is no longer present on the system.
+
+For this investigation, Shellbags were important for reconstructing the attacker's movement through the victim's system.
+
+---
+
+## Important Windows Registry Artifacts
+
+### `NTUSER.DAT`
+
+`NTUSER.DAT` is a user-specific Windows Registry hive.
+
+It can contain useful forensic information related to:
+
+- User activity
+- Recently accessed items
+- Explorer activity
+- Application usage
+- User-specific settings
+- Recently opened files
+
+During this investigation, `NTUSER.DAT` helped provide additional context about attacker activity.
+
+---
+
+### `UsrClass.dat`
+
+`UsrClass.dat` is another user-specific Registry hive.
+
+For Shellbag investigations, this is one of the most important artifacts because it contains information related to Windows Shell activity.
+
+Important Shellbag-related structures can be found here, including:
+
+```text
+BagMRU
+Bags
+MRUListEx
