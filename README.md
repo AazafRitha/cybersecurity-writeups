@@ -8,9 +8,11 @@ My notes from hands-on cybersecurity labs. I write down the steps I took, the ev
 
 | Lab | Platform | Topic | Status |
 | --- | --- | --- | --- |
+| [Cache Me Outside](tryhackme/rooms/cache-me-outside/README.md) | TryHackMe | OSINT | Published |
+| [Missing Person](tryhackme/rooms/missing-person/README.md) | TryHackMe | OSINT | Published |
 | [Baggage](hackthebox/sherlocks/very-easy/baggage/README.md) | Hack The Box Sherlock | Windows Shellbag forensics | Draft — screenshots pending |
 
-I will add new write-ups here when they are ready to share. The table shows the real content in this repository, not planned categories.
+The two TryHackMe pages are adapted from my Medium posts. Their screenshots remain linked from the original articles.
 
 ## Browse
 
