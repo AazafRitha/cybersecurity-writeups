@@ -1,3 +1,5 @@
+<p align="center"><img src="../assets/arvictor-banner.png" alt="ARVictor Cybersecurity Writeups" width="100%"></p>
+
 # Hack The Box write-ups
 
 [Back to the main index](../README.md)
