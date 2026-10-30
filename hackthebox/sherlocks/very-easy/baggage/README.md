@@ -15,11 +15,13 @@
 ![Type](https://img.shields.io/badge/Type-Sherlock-8A2BE2?style=flat-square)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Very%20Easy-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-DFIR-blue?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Draft-orange?style=flat-square)
 
 </p>
 
 ---
+
+> **Draft:** The investigation notes are here, but the evidence screenshots have not been added yet. Verify the findings and add the screenshots before marking this write-up as published.
 
 # 1. Introduction
 
@@ -63,7 +65,7 @@ UsrClass.dat.LOG2
 | Category | Digital Forensics / DFIR |
 | Main Topic | Windows Shellbag Analysis |
 | Operating System | Windows |
-| Status | ✅ Completed |
+| Status | Draft — screenshots pending |
 
 ---
 
@@ -304,15 +306,11 @@ Because Windows Explorer can treat ZIP archives similarly to folders, archive ac
 1.zip
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/01-downloaded-archive.png"
-       alt="1.zip Shellbag evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/01-downloaded-archive.png`.
 
-The screenshot should show:
+The planned screenshot should show:
 
 ```text
 Downloads
@@ -370,15 +368,11 @@ Version       = 1.4.1.1028
 Everything 1.4.1.1028
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/02-everything-utility.png"
-       alt="Everything search utility evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/02-everything-utility.png`.
 
-The screenshot should show:
+The planned screenshot should show:
 
 ```text
 Everything-1.4.1.1028.x64.zip
@@ -424,15 +418,11 @@ The relevant Shellbag interaction time was:
 2025-09-03 07:31:05
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/03-vpn-folder.png"
-       alt="VPN folder access evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/03-vpn-folder.png`.
 
-The screenshot should show:
+The planned screenshot should show:
 
 ```text
 ROT Station 3 internal VPN
@@ -468,13 +458,9 @@ The name clearly indicated that it contained password-related information.
 OnePassword MasterPass
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/04-password-directory.png"
-       alt="OnePassword MasterPass Shellbag evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/04-password-directory.png`.
 
 ---
 
@@ -525,13 +511,9 @@ Share  = prodshare
 \\Prod-ns-2\prodshare
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/05-network-share.png"
-       alt="UNC network share evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/05-network-share.png`.
 
 ---
 
@@ -559,13 +541,9 @@ It is asking for the year in which construction was planned.
 2027
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/06-construction-folder.png"
-       alt="Construction 2027 evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/06-construction-folder.png`.
 
 ---
 
@@ -599,13 +577,9 @@ Network
 Dam Construction Engineer Plans.zip
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/07-network-archive.png"
-       alt="Dam Construction Engineer Plans archive"
-       width="900">
-</p>
+> **Screenshot pending:** `images/07-network-archive.png`.
 
 ---
 
@@ -637,13 +611,9 @@ The relevant Shellbag interaction timestamp was:
 2025-09-03 07:34:04
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/08-network-archive-time.png"
-       alt="Network archive interaction time"
-       width="900">
-</p>
+> **Screenshot pending:** `images/08-network-archive-time.png`.
 
 The screenshot should clearly show both:
 
@@ -705,13 +675,9 @@ C:\Users\steve\Pictures\a
 C:\Users\steve\Pictures\a
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/09-staging-folder.png"
-       alt="Data staging directory evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/09-staging-folder.png`.
 
 ---
 
@@ -773,15 +739,11 @@ This corresponds to the relevant Shellbag/MRU interaction context.
 2025-09-03 07:34:30
 ```
 
-### Proof
+### Evidence to add
 
-<p align="center">
-  <img src="images/10-exfiltration-archive.png"
-       alt="a.zip exfiltration archive interaction evidence"
-       width="900">
-</p>
+> **Screenshot pending:** `images/10-exfiltration-archive.png`.
 
-The screenshot should show:
+The planned screenshot should show:
 
 ```text
 a.zip
@@ -1096,7 +1058,7 @@ Understanding the artifact, the question, and the timestamp semantics is essenti
 ---
 
 <p align="center">
-  <strong>Hack The Box Sherlock — Baggage ✅ Completed</strong>
+  <strong>Hack The Box Sherlock — Baggage (Draft)</strong>
 </p>
 
 <p align="center">
